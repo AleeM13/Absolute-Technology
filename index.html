@@ -37,6 +37,29 @@
               <span><i class="fa-solid fa-sun"></i></span>
               <span><i class="fa-solid fa-moon"></i></span>
             </button>
+            <div class="section-carrito">
+              <ul>
+                <li class="submenu">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <div id="carrito">
+                    <p class="vacio">Carrito vacio</p>
+                    <table id="lista-carrito">
+                      <thead>
+                        <tr>
+                          <th>Imagen</th>
+                          <th>Productos</th>
+                          <th>precio</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        
+                      </tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="button">Vaciar carrito</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
         </div>
       </nav>
     </header>
@@ -49,6 +72,7 @@
         </div>
       </div>
     </div>
+    <!-- Contenido Menu Hamburguesa -->
     <div class="cont-menu-hamburguesa active" id="menu">
       <ul class="menu-list">
         <li><a href="index.html">Home</a></li>
@@ -70,7 +94,7 @@
         Además, ofrecemos ofertas especiales, descuentos y planes de financiación para que accedas a eso que tanto querés al precio más accesible y con la mejor cuota.
       </p>
     </section>
-    <section class="productos" id="productos">
+    <section class="productos" id="lista-catalogo">
       <div class="container">
         <!-- Celulares -->
         <h3>Celulares</h3>
@@ -87,7 +111,7 @@
                 <p class="card-info-color">$92.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <a href="#" class="agregar-carrito" data-id="1">Agregar al carrito</a>
           </div>
           <div class="card">
             <div class="img">
@@ -101,7 +125,7 @@
                 <p class="card-info-color">$169.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="2">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -115,7 +139,7 @@
                 <p class="card-info-color">$169.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="3">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -129,7 +153,7 @@
                 <p class="card-info-color">$92.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="4">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -143,7 +167,7 @@
                 <p class="card-info-color">$352.399,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="5">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -157,7 +181,7 @@
                 <p class="card-info-color">$62.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="6">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -171,7 +195,7 @@
                 <p class="card-info-color">$92.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="7">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -185,7 +209,7 @@
                 <p class="card-info-color">$92.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="8">Agregar al carrito</button>
           </div>
         </div>
       </div>
@@ -205,7 +229,7 @@
                 <p class="card-info-color">$61.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="9">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -219,7 +243,7 @@
                 <p class="card-info-color">$164.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="10">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -233,7 +257,7 @@
                 <p class="card-info-color">$25.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="11">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -247,7 +271,7 @@
                 <p class="card-info-color">$198.399,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="12">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -261,7 +285,7 @@
                 <p class="card-info-color">$93.699,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="13">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -275,7 +299,7 @@
                 <p class="card-info-color">$94.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="14">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -289,7 +313,7 @@
                 <p class="card-info-color">$50.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="15">Agregar al carrito</button>
           </div>
           <div class="card">
             <div class="img">
@@ -303,7 +327,7 @@
                 <p class="card-info-color">$62.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="16">Agregar al carrito</button>
           </div>
         </div>
       </div>
@@ -316,14 +340,112 @@
               <img src="./img/17.png" alt="">
             </div>
             <div class="card-info">
-              <h5>Samsung</h5>
-              <p>Celular samsung sm-a528b</p>
+              <h5>Hp</h5>
+              <p>Notebook hp stream laptop 14-ax112la - 2m6k7la celeron</p>
               <span class="precio">
                 <p>Precio online:</p>
-                <p class="card-info-color">$92.999,00</p>
+                <p class="card-info-color">$59.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="17">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/18.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Hp</h5>
+              <p>Notebook hp dw1080la intel celebron</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$74.999,00</p>
+              </span>
+            </div>
+            <button data-id="18">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/19.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Hp</h5>
+              <p>NOTEBOOK HP 3D3B9LT AMD R5</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$249.210,00</p>
+              </span>
+            </div>
+            <button data-id="19">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/20.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Asus</h5>
+              <p>NOTEBOOK GAMER ASUS FX506HCB-HN161T INTEL CORE I5</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$299.999,00</p>
+              </span>
+            </div>
+            <button data-id="20">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/21.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Asus</h5>
+              <p>NOTEBOOK ASUS X515EA-EJ1342T INTEL CORE I3</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$99.999,00</p>
+              </span>
+            </div>
+            <button data-id="21">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/22.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Asus</h5>
+              <p>NOTEBOOK ASUS VIVIO BOOK 15 - K3500PA-L1168T INTEL CORE I5</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$169.999,00</p>
+              </span>
+            </div>
+            <button data-id="22">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/23.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Apple</h5>
+              <p>NOTEBOOK APPLE MACBOOK AIR 13 / MGND3LE/A APPLE</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$274.499,00</p>
+              </span>
+            </div>
+            <button data-id="23">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/24.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Acer</h5>
+              <p>NOTEBOOK ACER A515-55-38L9 INTEL CORE I3</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$94.999,00</p>
+              </span>
+            </div>
+            <button data-id="24">Agregar al carrito</button>
           </div>
         </div>
       </div>
@@ -333,17 +455,115 @@
         <div class="container-card">
           <div class="card">
             <div class="img">
-              <img src="" alt="">
+              <img src="./img/25.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Noblex</h5>
+              <p>ANDROID SMART TV NOBLEX 32 PULGADAS HD DM32X7000</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$43.999,00</p>
+              </span>
+            </div>
+            <button data-id="25">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/26.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Noblex</h5>
+              <p>SMART TV NOBLEX 65 PULGADAS 4K UHD DK65X6500</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$178.999,00</p>
+              </span>
+            </div>
+            <button data-id="26">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/27.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Philips</h5>
+              <p>ANDROID SMART TV PHILIPS 43 PULGADAS FULL HD 43PFD6917/77</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$69.999,00</p>
+              </span>
+            </div>
+            <button data-id="27">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/28.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Philips</h5>
+              <p>ANDROID SMART TV PHILIPS 55 PULGADAS 4K UHD 55PUD7406/77</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$124.999,00</p>
+              </span>
+            </div>
+            <button data-id="28">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/29.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Lg</h5>
+              <p>SMART TV LG 43 PULGADAS FULL HD 43LM6350PSB</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$79.999,00</p>
+              </span>
+            </div>
+            <button data-id="29">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/30.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Lg</h5>
+              <p>SMART TV LG 55 PULGADAS 4K UHD 55NANO80</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$174.999,00</p>
+              </span>
+            </div>
+            <button data-id="30">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/31.png" alt="">
             </div>
             <div class="card-info">
               <h5>Samsung</h5>
-              <p>Celular samsung sm-a528b</p>
+              <p>SMART TV SAMSUNG 55 PULGADAS 4K UHD QN55Q80AAGCZB</p>
               <span class="precio">
                 <p>Precio online:</p>
-                <p class="card-info-color">$92.999,00</p>
+                <p class="card-info-color">$222.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="31">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/32.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Samsung</h5>
+              <p>SMART TV SAMSUNG 43 PULGADAS 4K UHD 43AU7000</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$75.999,00</p>
+              </span>
+            </div>
+            <button data-id="32">Agregar al carrito</button>
           </div>
         </div>
       </div>
@@ -353,17 +573,115 @@
         <div class="container-card">
           <div class="card">
             <div class="img">
-              <img src="" alt="">
+              <img src="./img/33.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>PHILCO</h5>
+              <p>HELADERA CON FREEZER PHILCO PHCT360X/01 INOX</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$95.999,00</p>
+              </span>
+            </div>
+            <button data-id="33">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/34.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>PHILCO</h5>
+              <p>HELADERA CICLICO PHILCO PHCT340B/01 BLANCO</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$82.999,00</p>
+              </span>
+            </div>
+            <button data-id="34">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/35.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>PHILCO</h5>
+              <p>HELADERA CICLICO PHILCO PHCT290/01 BLANCO</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$68.999,00</p>
+              </span>
+            </div>
+            <button data-id="35">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/36.png" alt="">
             </div>
             <div class="card-info">
               <h5>Samsung</h5>
-              <p>Celular samsung sm-a528b</p>
+              <p>HELADERA INVERTER SAMSUNG RT38K5932BS NEGRO</p>
               <span class="precio">
                 <p>Precio online:</p>
-                <p class="card-info-color">$92.999,00</p>
+                <p class="card-info-color">$208.999,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="36">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/37.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Samsung</h5>
+              <p>HELADERA INVERTER SAMSUNG SART29K577JS8 GRIS</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$140.999,00</p>
+              </span>
+            </div>
+            <button data-id="37">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/38.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Samsung</h5>
+              <p>HELADERA NO FROST SAMSUNG RT38K5932SL DIGITAL INVERTER INOXIDABLE</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$197.999,00</p>
+              </span>
+            </div>
+            <button data-id="38">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/39.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>LG</h5>
+              <p>HELADERA SIDE BY SIDE LG LS74SXSX INOXIDABLE</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$799.999,00</p>
+              </span>
+            </div>
+            <button data-id="39">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/40.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>LG</h5>
+              <p>HELADERA NO FROST LG LB41WPP SILVER</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$279.999,00</p>
+              </span>
+            </div>
+            <button data-id="40">Agregar al carrito</button>
           </div>
         </div>
       </div>
@@ -373,17 +691,115 @@
         <div class="container-card">
           <div class="card">
             <div class="img">
-              <img src="" alt="">
+              <img src="./img/41.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>LG</h5>
+              <p>LAVARROPAS LG WM8516WE6 8.5 BLANCO</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$134.999,00</p>
+              </span>
+            </div>
+            <button data-id="41">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/42.png" alt="">
             </div>
             <div class="card-info">
               <h5>Samsung</h5>
-              <p>Celular samsung sm-a528b</p>
+              <p>LAVARROPAS AUTOMATICO SAMSUNG WW70J4463GS 7 GRIS</p>
               <span class="precio">
                 <p>Precio online:</p>
-                <p class="card-info-color">$92.999,00</p>
+                <p class="card-info-color">$132.499,00</p>
               </span>
             </div>
-            <button>Agregar al carrito</button>
+            <button data-id="42">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/43.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Samsung</h5>
+              <p>LAVARROPAS AUTOMATICO SAMSUNG WW90J5410GS 9 PLATEADO</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$141.999,00</p>
+              </span>
+            </div>
+            <button data-id="43">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/44.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Samsung</h5>
+              <p>LAVARROPAS AUTOMATICO SAMSUNG WA80F5S4UDA 8 GRIS</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$108.999,00</p>
+              </span>
+            </div>
+            <button data-id="44">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/45.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Samsung</h5>
+              <p>LAVARROPAS AUTOMATICO SAMSUNG WA70F5S4UDW 7 BLANCO</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$94.499,00</p>
+              </span>
+            </div>
+            <button data-id="45">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/46.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Drean</h5>
+              <p>LAVARROPAS AUTOMATICO DREAN NEXT 6.06 ECO 6 BLANCO</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$83.299,00</p>
+              </span>
+            </div>
+            <button data-id="46">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/47.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Drean</h5>
+              <p>LAVARROPAS DREAN NEXT 8-14 PG ECO 8 GRIS</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$109.899,00</p>
+              </span>
+            </div>
+            <button data-id="47">Agregar al carrito</button>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="./img/48.png" alt="">
+            </div>
+            <div class="card-info">
+              <h5>Drean</h5>
+              <p>LAVARROPAS AUTOMATICO DREAN CONCEPT FUZZY LOGIC TECH V1 5 BLANCO</p>
+              <span class="precio">
+                <p>Precio online:</p>
+                <p class="card-info-color">$60.199,00</p>
+              </span>
+            </div>
+            <button data-id="48">Agregar al carrito</button>
           </div>
         </div>
       </div>
