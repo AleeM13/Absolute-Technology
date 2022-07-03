@@ -28,7 +28,7 @@ body {
     top: 0px;
     z-index: 1000;
     background: #f1f1f1;
-    opacity: .9;
+    opacity: .94;
 }
 
 .navbar-list {
@@ -86,7 +86,7 @@ a {
 
 .portada {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,7 +251,59 @@ a {
     transition: all .3s;
 }
 
+.container-beneficios {
+    background: #f1f1f1;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
 
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.card-beneficios {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 20%;
+    min-width: 315px;
+    height: 196px;
+    gap: 10px;
+}
+
+.icon {
+    background: #555;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.beneficios h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.beneficios p {
+    font-size: 14px;
+    width: 95%;
+    text-align: center;
+}
 
 @media (max-width: 900px) {
     body.dark {
@@ -282,6 +334,10 @@ a {
 
     /* Ocultar */
     .navbar-list, .sign {
+        display: none;
+    }
+
+    .card:nth-child(even) {
         display: none;
     }
 
@@ -381,7 +437,7 @@ a {
     /* DarkMode */
      .btn {
         display: flex;
-        width: 40%;
+        width: 20%;
         justify-content: space-between;
         align-items: center;
     }
@@ -452,7 +508,6 @@ a {
     }
     
     .tittle {
-        display: none;
         margin-right: 1%;
         color: #fff;
         text-shadow: 0 0 12px #000, 0 0 12px #000;
@@ -512,5 +567,47 @@ a {
 
     body.dark .card button {
         background: #666;
+    }
+
+    /* Beneficios */
+    .container-beneficios {
+        margin-top: 20px;
+        padding: 40px 0;
+    }
+    
+    body.dark .container-beneficios {
+        background: #444;
+    }
+
+    .beneficios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    .card-beneficios {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 20%;
+        min-width: 300px;
+        gap: 10px;
+        height: 100%;
+    }
+    
+    body.dark .icon {
+        background: #666;
+    }
+
+    body.dark .beneficios h4 {
+        color: #fff;
+    }
+    
+    body.dark .beneficios p {
+        color: #fff;
     }
 }
