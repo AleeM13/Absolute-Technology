@@ -419,10 +419,10 @@ footer p {
     /* Contenido del menu */
     .cont-menu-hamburguesa {
         display: flex;
-        background: rgba(220, 220, 220, 0.8);
+        background: rgba(220, 220, 220, 0.95);
         position: absolute;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         top: 100px;
         left: 0;
@@ -435,7 +435,7 @@ footer p {
     }
 
     body.dark .cont-menu-hamburguesa {
-        background: rgba(120, 120, 120, 0.9);
+        background: rgba(120, 120, 120, 0.97);
     }
 
     .active {
@@ -692,19 +692,28 @@ footer p {
         gap: 20px;
     }
     
-    body.dark .contacto-info h2 {
+    .contacto-info h2 {
         font-size: 20px;
+    }
+
+    .contacto-info p {
+        font-size: 14px;
+    }
+
+    body.dark .contacto-info h2 {
         color: #fff;
     }
     
     body.dark .contacto-info p {
-        font-size: 14px;
         text-align: center;
         color: #fff;
     }
     
-    body.dark .redes i {
+    .redes i {
         font-size: 20px;
+    }
+
+    body.dark .redes i {
         color: #fff;
     }
     
