@@ -252,12 +252,12 @@ a {
 }
 
 .container-beneficios {
-    background: #f1f1f1;
+    background: #eee;
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 20px;
     width: 100%;
 }
 
@@ -344,6 +344,26 @@ a {
 
 .mapa {
     width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 50px;
+    gap: 20px;
+}
+
+footer h2 {
+    font-size: 24px;
+    text-shadow: 0 0 12px #bbb;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 @media (max-width: 900px) {
@@ -668,23 +688,23 @@ a {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 80%;
+        width: 85%;
         gap: 20px;
     }
     
     body.dark .contacto-info h2 {
-        font-size: 26px;
+        font-size: 20px;
         color: #fff;
     }
     
     body.dark .contacto-info p {
-        font-size: 18px;
-        text-align: justify;
+        font-size: 14px;
+        text-align: center;
         color: #fff;
     }
     
     body.dark .redes i {
-        font-size: 24px;
+        font-size: 20px;
         color: #fff;
     }
     
@@ -694,6 +714,37 @@ a {
     }
     
     .mapa {
-        width: 75%;
+        width: 90%;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f1f1f1;
+        padding: 40px 10px;
+        gap: 20px;
+    }
+    
+    body.dark footer {
+        background: #444;
+        color: #fff;
+    }
+
+    footer h2 {
+        font-size: 18px;
+        text-shadow: 0 0 12px #bbb;
+    }
+    
+    body.dark footer h2 {
+        text-shadow: 0 0 12px #000;
+    }
+
+    footer p {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
     }
 }
